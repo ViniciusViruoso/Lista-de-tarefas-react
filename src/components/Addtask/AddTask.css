@@ -1,0 +1,50 @@
+.add--task--container {
+    margin:1.5rem 0;
+    width:100%;
+    display: flex;
+}
+.add--task--input {
+    height:4rem;
+    min-height: 4rem;
+    padding:0 1rem;
+    
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    flex: 2;
+    background: #eee;
+    color:#440044;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    border: 0;
+    outline:none;
+
+    font-size:1.8rem;
+}
+
+.add--task--button--container {
+    margin-left: 1rem;
+    flex: 1;
+    line-height: 0;
+}
+
+@media screen and (max-width: 480px) {
+    .add--task--container {
+        flex-direction: column;
+    }
+    .add--task--input {
+        flex:1;
+        line-height:2;
+    }
+    .add--task--button--container {
+        margin-top: 1rem;
+        line-height: 1;
+        width: 100%;
+        margin-left:0;
+    }
+}

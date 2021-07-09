@@ -1,0 +1,25 @@
+.add--button {
+    background: #5e005e;
+    height: 4rem;
+    padding: 0 1rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    width:100%;
+    color: #eee;
+    font-weight: bold;
+    cursor: pointer;
+    border: 0;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+.add--button:hover {
+    filter: brightness(0.8);
+    -webkit-filter: brightness(0.8);
+}

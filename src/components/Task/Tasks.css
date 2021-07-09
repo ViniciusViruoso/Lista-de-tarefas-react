@@ -1,0 +1,21 @@
+main {
+  height: 58vh;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+::-webkit-scrollbar {
+  width: 14px;
+  height: 14px;
+}
+::-webkit-scrollbar-thumb {
+  background: #8f008f;
+  border-radius: 13px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #380038;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+  border: 4px solid transparent;
+  border-radius: 13px;
+}

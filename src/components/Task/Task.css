@@ -1,0 +1,85 @@
+.task--container {
+    background:#000000be;
+    margin:.8rem 0;
+    padding: 1.5rem 2rem;
+    display: flex;
+    border-radius: .5rem;
+    justify-content: space-between;
+    color: #eee;
+    align-items: center;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    font-size:2.4rem;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    opacity: 0;
+    animation: Anime 0.4s ease forwards;
+    -webkit-animation: AnimeContainer 0.4s ease forwards;
+    transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -o-transform: translateY(-30px);
+}
+.task--container + .task--container {
+    margin:2rem 0 0 0;
+}
+
+
+
+@keyframes AnimeContainer {
+    0% {
+        opacity: 0;
+    }  
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+    }  
+}
+
+.task--title {
+    cursor: pointer;
+    text-align: left;
+}
+
+.remove--task {
+    background:transparent;
+    font-size: 4rem;
+    line-height:1;
+    color:red;
+    border: none;
+    cursor: pointer;
+}
+.see--task--details {
+    background:transparent;
+    font-size: 4rem;
+    line-height:1;
+    color:yellow;
+    border: none;
+    margin-right: 3rem;
+    cursor: pointer;
+}
+
+.task--buttons--container {
+    flex-wrap: nowrap;
+    display: flex;
+    align-self: baseline;
+}
+@media screen and (max-width:480px) {
+    .remove--task {
+        font-size: 2rem;
+    }
+    .see--task--details {
+        font-size: 2rem;
+        margin-right: 1rem;
+    }
+}
