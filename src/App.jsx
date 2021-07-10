@@ -21,8 +21,9 @@ const App = () => {
         );
 
         setTasks(data);
-        
+        console.log(data)
     }
+    
     fetchTask()
 
     

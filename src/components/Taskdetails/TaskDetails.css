@@ -14,9 +14,8 @@
     text-align: left;
     line-height: 0;
     opacity: 0;
-
-    animation: Anime 0.4s ease forwards;
-    -webkit-animation: AnimeContainer 0.4s 0.2s ease forwards;
+    animation: AnimeContainer 0.4s ease forwards;
+    -webkit-animation: AnimeContainer 0.4s ease forwards;
     transform: translateY(-30px);
     -webkit-transform: translateY(-30px);
     -moz-transform: translateY(-30px);
@@ -28,9 +27,8 @@
     text-align: left;
     color:#eee;
     opacity: 0;
-
-    animation: Anime 0.4s ease forwards;
-    -webkit-animation: AnimeContainer 0.4s 0.4s ease forwards;
+    animation: AnimeContainer 0.4s ease forwards;
+    -webkit-animation: AnimeContainer 0.4s ease forwards;
     transform: translateY(-30px);
     -webkit-transform: translateY(-30px);
     -moz-transform: translateY(-30px);
