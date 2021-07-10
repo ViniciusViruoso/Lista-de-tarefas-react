@@ -3,6 +3,7 @@ footer {
     align-self: flex-end;
     width: 100%;
     justify-content: center;
+    grid-area: footer;
 }
 .footer--container {
     margin:0 auto;
@@ -14,7 +15,7 @@ footer {
     margin: 0;
     justify-content:center;
     align-items:center;
-    padding: 20px;
+    padding: 2rem;
     background:#180018d3;
     flex-direction:column;
 }
@@ -39,7 +40,6 @@ footer {
 .footer--container a i{
     font-size: 3rem;
     color:#f5d7f5;
-    margin-right:20px;
     transition:all .4s ease;
     -webkit-transition:all .4s ease;
     -moz-transition:all .4s ease;
@@ -49,4 +49,17 @@ footer {
 
 .footer--container a:hover,.footer--container i:hover{
     color:#681a68;
+}
+
+@media screen and (max-width: 768px) {
+    .footer--container {
+        padding: .5rem;
+
+    }
+    .footer--container p{
+        font-size: 1.5rem;
+    }
+    .footer--container a i{
+        font-size: 1.5rem;
+    }
 }

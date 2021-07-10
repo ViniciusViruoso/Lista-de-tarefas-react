@@ -2,10 +2,11 @@ main {
   height: 58vh;
   box-sizing: border-box;
   overflow-y: auto;
+  grid-area: conteudo;
 }
 ::-webkit-scrollbar {
-  width: 14px;
-  height: 14px;
+  width: .8rem;
+  height: .8rem;
 }
 ::-webkit-scrollbar-thumb {
   background: #8f008f;
@@ -17,5 +18,15 @@ main {
 ::-webkit-scrollbar-track {
   background: transparent;
   border: 4px solid transparent;
-  border-radius: 13px;
+  border-radius: 4rem;
+  -webkit-border-radius: 4rem;
+  -moz-border-radius: 4rem;
+  -ms-border-radius: 4rem;
+  -o-border-radius: 4rem;
+}
+
+@media screen and (max-width:768px) {
+  main {
+      height: 50vh;
+  }
 }
