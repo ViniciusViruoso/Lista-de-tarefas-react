@@ -12,20 +12,7 @@
     font-size: 3.8rem;
     color: #f5d7f5;
     text-align: left;
-    line-height: 0;
-    opacity: 0;
-    animation: AnimeContainer 0.4s ease forwards;
-    -webkit-animation: AnimeContainer 0.4s ease forwards;
-    transform: translateY(-30px);
-    -webkit-transform: translateY(-30px);
-    -moz-transform: translateY(-30px);
-    -ms-transform: translateY(-30px);
-    -o-transform: translateY(-30px);
-}
-
-.back--button--container p {
-    text-align: left;
-    color:#eee;
+    line-height: 1.1;
     opacity: 0;
     animation: AnimeContainer 0.4s ease forwards;
     -webkit-animation: AnimeContainer 0.4s ease forwards;

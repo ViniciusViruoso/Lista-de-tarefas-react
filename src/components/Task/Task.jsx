@@ -5,8 +5,16 @@ import { useHistory } from 'react-router-dom';
 
 export const Task = ({ task,handlerTaskClick,handlerTaskRemoved }) => {
     const history = useHistory()
+
+    let titleTaskFormat = task.title;
+    if(titleTaskFormat.length > 30) {
+        titleTaskFormat = titleTaskFormat.substring(0, 40) + '...';
+    }
+
+
+
     const handlerTaskDetailsClick = () => {
-        history.push(`/${task.title}`)
+        history.push(`/${titleTaskFormat}`)
     }
 
     
@@ -18,7 +26,7 @@ export const Task = ({ task,handlerTaskClick,handlerTaskRemoved }) => {
         style={task.completed ? {transition: 'all 0.4s ease',textDecoration: 'line-through',fontStyle:'italic',borderLeft: '30px solid #5e005e'}:{}}
         >
             <div className="task--title" onClick={() => handlerTaskClick(task.id)}>
-                {task.title}
+                {titleTaskFormat}
             </div>
 
             <div className="task--buttons--container">
